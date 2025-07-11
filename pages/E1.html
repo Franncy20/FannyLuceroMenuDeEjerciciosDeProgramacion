@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Repetir un nombre</title>
+    <link rel="stylesheet" href="../css/estilo_form.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Repetir un nombre</h1>
+        <form action="../Ejercicios.html">
+            <div class="form-group">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Ingresa un nombre" required>
+            </div>
+           
+            <div class="form-group">
+                <label for="n">Repeticiones:</label>
+                <input type="number" id="n" name="n" placeholder="Ingresa un numero"  required>
+            </div>        
+            
+            <div class="resultado" id="resultado">
+                <strong>Resultado:</strong> Complete el formulario
+            </div>
+            
+            <div class="button-group">
+                <button type="button" class="btn-primary" onclick="RepetirNombre()">
+                    <span>Validar</span>
+                </button>
+                <button type="reset" class="btn-secondary" onclick="limpiarTodo()">
+                    <span>Limpiar</span>
+                </button>
+                <button type="button" class="btn-secondary" onclick="window.location.href='../Ejercicios.html'">
+                    <span>Regresar</span>
+                </button>
+            </div>            
+        </form>
+    </div>
+    <script src="../js/E1.js"></script>
+</body>
+</html>
