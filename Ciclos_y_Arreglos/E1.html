@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arreglo de frutas</title>
+    <link rel="stylesheet" href="../css/estilo_form.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Arreglo de frutas</h1>
+        <form action="../CyA.html">
+
+            <div class="form-group">
+                <label for="lista">Lista:</label>
+                <input type="text" id="lista" name="lista" placeholder="Ejemplo: manzana;banana;uva..." required>
+            </div>
+            
+            <div class="resultado" id="resultado">
+                <strong>Resultado:</strong> Aqui se muestra la lista de frutas...
+            </div>
+           
+            <div class="button-group">
+                <button type="button" class="btn-primary" onclick="mostrarfrutas()">
+                    <span>Mostrar</span>
+                </button>
+                <button type="reset" class="btn-secondary" onclick="limpiarTodo()">
+                    <span>Limpiar</span>
+                </button>
+                <button type="button" class="btn-secondary" onclick="window.location.href='../CyA.html'">
+                    <span>Regresar</span>
+                </button>
+            </div>
+            </div>
+        </form>
+    </div>
+    <script src="./C_A_js/E1.js"></script>
+</body>
+</html>
