@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios de Programación</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            text-align: center;
+            color: white;
+            font-size: 2.5rem;
+            margin-bottom: 40px;
+            text-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        .cards-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            text-decoration: none;
+            color: inherit;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
+            text-align: center;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+        }
+
+        .card-icon {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            display: block;
+        }
+
+        .card-title {
+            font-size: 1.4rem;
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 15px;
+        }
+
+        .card-description {
+            color: #666;
+            line-height: 1.5;
+            font-size: 0.95rem;
+        }
+
+        .card:nth-child(1) .card-icon { color: #667eea; }
+        .card:nth-child(2) .card-icon { color: #f093fb; }
+        .card:nth-child(3) .card-icon { color: #4facfe; }
+        .card:nth-child(4) .card-icon { color: #43e97b; }
+        .card:nth-child(5) .card-icon { color: #fa709a; }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .cards-container {
+                grid-template-columns: 1fr;
+            }
+            
+            .card {
+                padding: 25px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Ejercicios de Programación</h1>
+        
+        <div class="cards-container">
+            <a href="./pages/edad.html" class="card">
+                <span class="card-icon">🔢</span>
+                <h3 class="card-title">Edad</h3>
+                <p class="card-description">Dada una edad presenta si es mayor o menor de edad</p>
+            </a>
+
+            <a href="./pages/mayor_dos_numeros.html" class="card">
+                <span class="card-icon">📝</span>
+                <h3 class="card-title">Mayor dos Numeros</h3>
+                <p class="card-description">Dados dos numeros presenta el mayor de ellos</p>
+            </a>
+
+            <a href="./pages/juego.html" class="card">
+                <span class="card-icon">🎲</span>
+                <h3 class="card-title">Juego de Adivinanza</h3>
+                <p class="card-description">Crea un juego donde el usuario adivine un número aleatorio</p>
+            </a>
+
+            <a href="./pages/analisis.html" class="card">
+                <span class="card-icon">📊</span>
+                <h3 class="card-title">Análisis de Datos</h3>
+                <p class="card-description">Procesa y analiza un conjunto de datos simples</p>
+            </a>
+
+            <a href="./pages/conversor.html" class="card">
+                <span class="card-icon">🌡️</span>
+                <h3 class="card-title">Conversor de Temperatura</h3>
+                <p class="card-description">Convierte entre diferentes unidades de temperatura</p>
+            </a>
+
+            <a href="./Vehiculo/index.html" class="card">
+                <span class="card-icon">📝</span>
+                <h3 class="card-title">Calculadora de vehiculos</h3>
+                <p class="card-description">Calcula el valor del vehiculo que desea comprar</p>
+            </a>
+
+            <a href="./E.html" class="card">
+            <span class="card-icon">🔢</span>
+            <h3 class="card-title">Ejercicios</h3>
+            </a>
+
+            <a href="./Ejercicios.html" class="card">
+            <span class="card-icon">🔢</span>
+            <h3 class="card-title">Ejercicios de Ciclos (While)</h3>
+            </a>
+
+            <a href="./CyA.html" class="card">
+            <span class="card-icon">🔢</span>
+            <h3 class="card-title">Ejercicios de Ciclos y Arreglos</h3>
+            </a>
+        </div>  
+        </div>  
+
+    </div>
+</body>
+</html>
